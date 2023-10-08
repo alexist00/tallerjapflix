@@ -76,11 +76,11 @@ function mostrarPeliculas(resultados){
     
     function scoreStars(score) {
         let starsHtml = "";
-        for (let i = 1; i <= 5; i++) {
+        for (let i = 1; i <= 10; i+=2) {
           if (i <= score) {
-            starsHtml += `<i class="fas fa-star text-warning me-2"></i>`
+            starsHtml += `<i class="fa fa-star text-warning me-2"></i>`
           } else {
-            starsHtml += `<i class="far fa-star me-2"></i>`
+            starsHtml += `<i class="fa fa-star-o text-warning"></i>`
           }
         }
         return starsHtml
